@@ -1,4 +1,4 @@
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +18,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/msm8956-common/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/xiaomi/msm8956-common/proprietary/bin/cnd:system/bin/cnd \
-    vendor/xiaomi/msm8956-common/proprietary/bin/displayfeature:system/bin/displayfeature \
     vendor/xiaomi/msm8956-common/proprietary/bin/dpmd:system/bin/dpmd \
     vendor/xiaomi/msm8956-common/proprietary/bin/garden_app:system/bin/garden_app \
     vendor/xiaomi/msm8956-common/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -93,8 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/xiaomi/msm8956-common/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/xiaomi/msm8956-common/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
-    vendor/xiaomi/msm8956-common/proprietary/etc/thermal-engine-8956.conf:system/etc/thermal-engine-8956.conf \
-    vendor/xiaomi/msm8956-common/proprietary/etc/thermal-engine-8976.conf:system/etc/thermal-engine-8976.conf \
     vendor/xiaomi/msm8956-common/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/xiaomi/msm8956-common/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/msm8956-common/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
@@ -116,7 +113,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/msm8956-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/xiaomi/msm8956-common/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
@@ -127,9 +123,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/hw/activity_recognition.msm8952.so:system/vendor/lib/hw/activity_recognition.msm8952.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8952.so:system/vendor/lib/hw/sound_trigger.primary.msm8952.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/hw/vulkan.msm8952.so:system/vendor/lib/hw/vulkan.msm8952.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/legacy/libprotobuf-cpp-full.so:system/vendor/lib64/legacy/libprotobuf-cpp-full.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
@@ -155,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
@@ -163,7 +156,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so:system/vendor/lib/libaptXHD-1.0.0-rel-Android21-ARMv7A.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libaptXScheduler.so:system/vendor/lib/libaptXScheduler.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libaudioalsa.so:system/vendor/lib/libaudioalsa.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
@@ -202,7 +194,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
@@ -285,7 +276,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libasn1crt.so:system/vendor/lib64/libasn1crt.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libasn1crtx.so:system/vendor/lib64/libasn1crtx.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libbccQTI.so:system/vendor/lib64/libbccQTI.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libbtnv.so:system/vendor/lib64/libbtnv.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libc2d30-a5xx.so:system/vendor/lib64/libc2d30-a5xx.so \
@@ -340,7 +330,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
-    vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libvendorconn.so:system/vendor/lib64/libvendorconn.so \
     vendor/xiaomi/msm8956-common/proprietary/vendor/lib64/libvoice-svc.so:system/vendor/lib64/libvoice-svc.so \
@@ -355,7 +344,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libloc_api_v02 \
-    libthermalclient \
+    libaudioalsa \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
